@@ -9,7 +9,27 @@
 
 <body>
 
-	<textarea id="textarea" oninput="resizeTextArea('textarea')"></textarea>
+	<table>
+		<tr>
+			<td rowspan="3">
+				<textarea id="textarea" oninput="resizeTextArea('textarea')"></textarea>
+			</td>
+				<tr>
+					<td class="sideCell">Page:</td>
+					<td class="sideCell">
+						<span id="pageCharCount">0 characters</span><br>
+						<span id="pageWordCount">0 words</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="sideCell">Paragraph:</td>
+					<td class="sideCell">
+						<span id="paragraphCharCount">0 characters</span><br>
+						<span id="paragraphWordCount">0 words</span>
+					</td>
+				</tr>
+		</tr>
+	</table>
 	
 	<script type="text/javascript" src="files/js/index.js"></script>
 
