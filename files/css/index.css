@@ -1,3 +1,7 @@
 body{
 	text-align: center;
 }
+
+#textarea{
+	width: 50%
+}
