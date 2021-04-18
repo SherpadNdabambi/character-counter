@@ -9,27 +9,10 @@
 
 <body>
 
-	<table>
-		<tr>
-			<td rowspan="3">
-				<textarea id="textarea" oninput="resizeTextArea('textarea')"></textarea>
-			</td>
-				<tr>
-					<td class="sideCell">Page:</td>
-					<td class="sideCell">
-						<span id="pageCharCount">0 characters</span><br>
-						<span id="pageWordCount">0 words</span>
-					</td>
-				</tr>
-				<tr>
-					<td class="sideCell">Paragraph:</td>
-					<td class="sideCell">
-						<span id="paragraphCharCount">0 characters</span><br>
-						<span id="paragraphWordCount">0 words</span>
-					</td>
-				</tr>
-		</tr>
-	</table>
+	Page: <span id="pageCharCount">0</span> characters, <span id="pageWordCount">0</span> words<br>
+	Paragraph: <span id="paragraphCharCount">0</span> characters, <span id="paragraphWordCount">0</span> words<br><br>
+
+	<textarea id="textarea" oninput="resizeTextArea('textarea')" placeholder="type your text here..."></textarea>
 	
 	<script type="text/javascript" src="files/js/index.js"></script>
 
