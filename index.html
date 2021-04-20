@@ -9,10 +9,11 @@
 
 <body>
 
-	Page: <span id="pageCharCount">0</span> characters, <span id="pageWordCount">0</span> words<br>
-	Paragraph: <span id="paragraphCharCount">0</span> characters, <span id="paragraphWordCount">0</span> words<br><br>
+	Page: <span id="pageCharCount">0</span> characters, <span id="pageWordCount">0</span> words
 
-	<textarea id="textarea" oninput="resizeTextArea('textarea')" placeholder="type your text here..."></textarea>
+	<div id="paragraphStats"></div>
+
+	<textarea id="textarea" oninput="resizeTextArea('textarea'); count()" placeholder="type your text here..."></textarea>
 	
 	<script type="text/javascript" src="files/js/index.js"></script>
 
